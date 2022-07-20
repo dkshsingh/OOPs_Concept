@@ -35,5 +35,65 @@
      - State: It is represented by the attributes of an object. It also reflects the properties of an object.
      - Behavior: It is represented by the methods of an object. It also reflects the response of an object to other objects.
      - Identity: It gives a unique name to an object and enables one object to interact with other objects.
-
+### The self
+   - Class methods must have an extra first parameter in the method definition. We do not give a value for this parameter when we call the method, Python provides       it
+   - If we have a method that takes no arguments, then we still have to have one argument.
+   - This is similar to this pointer in C++ and this reference in Java.
+### The __init__ method 
+    The __init__ method is similar to constructors in C++ and Java. It is run as soon as an object of a class is instantiated. The method is useful to do any initialization you want to do with your object.
     
+#### Example:  Creating Class and objects with methods
+    code:
+     class Dog:
+ 
+    # class attribute
+    attr1 = "mammal"
+ 
+    # Instance attribute
+    def __init__(self, name):
+        self.name = name
+         
+    def speak(self):
+        print("My name is {}".format(self.name))
+
+    Rodger = Dog("Rodger")
+    Tommy = Dog("Tommy")
+    Rodger.speak()
+    Tommy.speak()
+    
+### 3. polymorphism
+     Polymorphism simply means having many forms. For example, we need to determine if the given species of birds fly or not, using polymorphism we can do this          using a single function.
+     
+code:
+    class Bird:
+   
+    def intro(self):
+        print("There are many types of birds.")
+ 
+    def flight(self):
+        print("Most of the birds can fly but some cannot.")
+ 
+    class sparrow(Bird):
+   
+        def flight(self):
+            print("Sparrows can fly.")
+ 
+    class ostrich(Bird):
+ 
+        def flight(self):
+           print("Ostriches cannot fly.")
+ 
+       obj_bird = Bird()
+       obj_spr = sparrow()
+       obj_ost = ostrich()
+ 
+       obj_bird.intro()
+       obj_bird.flight()
+ 
+       obj_spr.intro()
+       obj_spr.flight()
+ 
+       obj_ost.intro()
+       obj_ost.flight()
+     
+     
