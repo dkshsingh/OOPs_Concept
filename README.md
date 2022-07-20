@@ -63,8 +63,8 @@
     
 ### 3. polymorphism
      Polymorphism simply means having many forms. For example, we need to determine if the given species of birds fly or not, using polymorphism we can do this          using a single function.
-     
-code:
+#### Example     
+    code:
     class Bird:
    
     def intro(self):
@@ -96,4 +96,10 @@ code:
        obj_ost.intro()
        obj_ost.flight()
      
-     
+ #### output
+      There are many types of birds.
+      Most of the birds can fly but some cannot.
+      There are many types of birds.
+      Sparrows can fly.
+      There are many types of birds.
+      Ostriches cannot fly.
