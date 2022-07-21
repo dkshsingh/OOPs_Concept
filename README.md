@@ -64,6 +64,9 @@
     
 ### 3. polymorphism
      Polymorphism simply means having many forms. For example, we need to determine if the given species of birds fly or not, using polymorphism we can do this          using a single function.
+     
+<img width="552" alt="img2" src="https://user-images.githubusercontent.com/78050476/180130695-e88d3b00-39f3-46d0-9650-09929740237f.png">
+
 #### Example     
     code:
     class Bird:
@@ -104,3 +107,23 @@
       Sparrows can fly.
       There are many types of birds.
       Ostriches cannot fly.
+
+### 4. Inheritance
+     Inheritance is the capability of one class to derive or inherit the properties from another class. The class that derives properties is called the derived class or child class and the class from which the properties are being derived is called the base class or parent class.
+     
+#### The benefits of inheritance are:
+
+   - It represents real-world relationships well.
+   - It provides the reusability of a code. We don’t have to write the same code again and again. Also, it allows us to add more features to a class without              modifying it.
+   - It is transitive in nature, which means that if class B inherits from another class A, then all the subclasses of B would automatically inherit from class A.
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
