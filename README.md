@@ -119,12 +119,20 @@
    
 ### types of inheritance
 <img width="267" alt="img3" src="https://user-images.githubusercontent.com/78050476/180131395-b62078e3-578b-441e-8526-223f96f9e317.png">
+
+### I. Single inheritance
+      Single inheritance enables a derived class to inherit properties from a single parent class, thus enabling code reusability and the addition of new features         to existing code.
+ ### Code:
+       class Parent:
+       def func1(self):
+           print("This function is in parent class.")
+        
+       class Child(Parent):
+       def func2(self):
+           print("This function is in child class.")
    
    
-   
-   
-   
-   
+   ### II. Multiple inheritance
    
    
    
