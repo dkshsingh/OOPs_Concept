@@ -176,7 +176,7 @@
                  print('Grandfather name :', self.grandfathername)
                  print("Father name :", self.fathername)
                  print("Son name :", self.sonname)
-### Hierarchical inheritance
+### IV. Hierarchical inheritance
      When more than one derived class are created from a single base this type of inheritance is called hierarchical inheritance. In this program, we have a parent (base) class and two child (derived) classes.
 
 ### code:
@@ -194,8 +194,8 @@
             def func3(self):
                print("This function is in child 2.")
              
-  ### Hybrid inheritance
-      Inheritance consisting of multiple types of inheritance is called hybrid
+  ### V. Hybrid inheritance
+       Inheritance consisting of multiple types of inheritance is called hybrid
       
   ### code:
            class School:
@@ -241,7 +241,8 @@
         self._a = 3
         print("Calling modified protected member outside class: ", self._a)
              
-             
+### 6. Abstraction
+       Abstraction is the concept of object-oriented programming that "shows" only essential attributes and "hides" unnecessary information.
              
              
              
