@@ -219,6 +219,9 @@
              
 ### 5. Encapsulation
        Encapsulation is one of the fundamental concepts in object-oriented programming (OOP). It describes the idea of wrapping data and the methods that work on   data within one unit. This puts restrictions on accessing variables and methods directly and can prevent the accidental modification of data. 
+<img width="379" alt="e" src="https://user-images.githubusercontent.com/78050476/181093924-f88c1404-7f85-4b78-b444-07114e4c77cf.png">
+
+       
 ### code:
           
          class Base:
@@ -243,6 +246,6 @@
              
 ### 6. Abstraction
        Abstraction is the concept of object-oriented programming that "shows" only essential attributes and "hides" unnecessary information.
-             
+ <img width="432" alt="ab" src="https://user-images.githubusercontent.com/78050476/181093941-e02214a7-4dec-4845-bef9-6ee1ba8a4af3.png">                  
              
              
