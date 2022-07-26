@@ -151,3 +151,76 @@
          def parents(self):
             print("Father :", self.fathername)
             print("Mother :", self.mothername)
+            
+### III. Multilevel inheritance
+          In multilevel inheritance, features of the base class and the derived class are further inherited into the new derived class. This is similar to a                  relationship representing a child and a grandfather. 
+            
+             
+### code:
+            class Grandfather:
+ 
+            def __init__(self, grandfathername):
+                 self.grandfathername = grandfathername
+                 
+            class Father(Grandfather):
+                def __init__(self, fathername, grandfathername):
+                    self.fathername = fathername
+             Grandfather.__init__(self, grandfathername)
+             
+            class Son(Father):
+                def __init__(self, sonname, fathername, grandfathername):
+                    self.sonname = sonname
+             Father.__init__(self, fathername, grandfathername)
+             
+             def print_name(self):
+                 print('Grandfather name :', self.grandfathername)
+                 print("Father name :", self.fathername)
+                 print("Son name :", self.sonname)
+### Hierarchical inheritance
+     When more than one derived class are created from a single base this type of inheritance is called hierarchical inheritance. In this program, we have a parent     (base) class and two child (derived) classes.
+
+### code:
+         class Parent:
+            def func1(self):
+               print("This function is in parent class.")
+ 
+
+         class Child1(Parent):
+             def func2(self):
+               print("This function is in child 1.")
+ 
+
+         class Child2(Parent):
+            def func3(self):
+               print("This function is in child 2.")
+             
+  ### Hybrid inheritance
+      Inheritance consisting of multiple types of inheritance is called hybrid
+      
+  ### code:
+           class School:
+               def func1(self):
+               print("This function is in school.")
+ 
+ 
+         class Student1(School):
+            def func2(self):
+               print("This function is in student 1. ")
+ 
+ 
+         class Student2(School):
+            def func3(self):
+            print("This function is in student 2.")
+ 
+ 
+         class Student3(Student1, School):
+            def func4(self):
+               print("This function is in student 3.")
+             
+             
+             
+             
+             
+             
+             
+             
