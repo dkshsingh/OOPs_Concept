@@ -121,7 +121,7 @@
 <img width="267" alt="img3" src="https://user-images.githubusercontent.com/78050476/180131395-b62078e3-578b-441e-8526-223f96f9e317.png">
 
 ### I. Single inheritance
-      Single inheritance enables a derived class to inherit properties from a single parent class, thus enabling code reusability and the addition of new features         to existing code.
+      Single inheritance enables a derived class to inherit properties from a single parent class, thus enabling code reusability and the addition of new features   to existing code.
  ### Code:
        class Parent:
        def func1(self):
@@ -133,7 +133,7 @@
    
    
  ### II. Multiple inheritance
-          When a class can be derived from more than one base class this type of inheritance is called multiple inheritances. In multiple inheritances, all the               features of the base classes are inherited into the derived class.   
+          When a class can be derived from more than one base class this type of inheritance is called multiple inheritances. In multiple inheritances, all the     features of the base classes are inherited into the derived class.   
  ### Code:
             class Mother:
          mothername = ""
@@ -153,7 +153,7 @@
             print("Mother :", self.mothername)
             
 ### III. Multilevel inheritance
-          In multilevel inheritance, features of the base class and the derived class are further inherited into the new derived class. This is similar to a                  relationship representing a child and a grandfather. 
+      In multilevel inheritance, features of the base class and the derived class are further inherited into the new derived class. This is similar to a    relationship representing a child and a grandfather. 
             
              
 ### code:
@@ -177,7 +177,7 @@
                  print("Father name :", self.fathername)
                  print("Son name :", self.sonname)
 ### Hierarchical inheritance
-     When more than one derived class are created from a single base this type of inheritance is called hierarchical inheritance. In this program, we have a parent     (base) class and two child (derived) classes.
+     When more than one derived class are created from a single base this type of inheritance is called hierarchical inheritance. In this program, we have a parent (base) class and two child (derived) classes.
 
 ### code:
          class Parent:
@@ -217,8 +217,29 @@
             def func4(self):
                print("This function is in student 3.")
              
-             
-             
+### 5. Encapsulation
+       Encapsulation is one of the fundamental concepts in object-oriented programming (OOP). It describes the idea of wrapping data and the methods that work on   data within one unit. This puts restrictions on accessing variables and methods directly and can prevent the accidental modification of data. 
+### code:
+          
+         class Base:
+              def __init__(self):
+ 
+        # Protected member
+        self._a = 2
+ 
+        # Creating a derived class
+         class Derived(Base):
+            def __init__(self):
+ 
+        # Calling constructor of
+        # Base class
+        Base.__init__(self)
+        print("Calling protected member of base class: ",
+              self._a)
+ 
+        # Modify the protected variable:
+        self._a = 3
+        print("Calling modified protected member outside class: ", self._a)
              
              
              
